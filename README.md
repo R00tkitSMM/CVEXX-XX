@@ -1,10 +1,7 @@
 # CVEXX-XX
 ****
-https://twitter.com/R00tkitSMM 
 
-UPDATE: file New-BSOD-win32k.sys is "!analyze -v" output for another unknown BSOD in win32k.sys 
-
-I have found a Windows kernel vulnerability in win32k.sys, the vulnerability is fixed in kb2998812 without assigning any CVE to it.
+I have found a windows kernel vulnerability in win32k.sys, the vulnerability is fixed in kb2998812 without assigning any CVE to it.
 so it seems Microsoft fixs some bugs secretly :) 
 
 MS use safe_cast_fnid_o_PMENUWND to check return value of xxxCreatewindowEx to fix this vulnerability. 
