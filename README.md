@@ -1,21 +1,15 @@
 # CVEXX-XX
 ****
-https://twitter.com/R00tkitSMM (firozimaysam@gmail.com) telegram username : https://telegram.me/firozi
-
+https://twitter.com/R00tkitSMM 
 
 UPDATE: file New-BSOD-win32k.sys is "!analyze -v" output for another unknown BSOD in win32k.sys 
 
-i just found Windows kernel vulnerability in win32k.sys Driver , the bug is fixed in kb2998812 without even mentioning there was a vulnerability in win32k.sys 
+I have found a Windows kernel vulnerability in win32k.sys, the vulnerability is fixed in kb2998812 without assigning any CVE to it.
+so it seems Microsoft fixs some bugs secretly :) 
 
-so it seems Microsoft  fix some bugs without talks about it :) 
-
-MS use safe_cast_fnid_o_PMENUWND to check return value of xxxCreatewindowEx  to kill 0Day silently 
-
-
-An attacker who successfully exploited this vulnerability could run arbitrary code in kernel mode
-
-
-Exploiting  this Bug is so trivial, there was  multiple methods  to Exploit it ( for example Find ACL of winlogon.exe and Zero It)
+MS use safe_cast_fnid_o_PMENUWND to check return value of xxxCreatewindowEx to fix this vulnerability. 
+An attacker who successfully exploited this vulnerability could run arbitrary code in kernel mode.
+Exploiting this "arbitrary address decrement" vulnerability is so trivial, there is multiple methods to exploit it.
 
 ```
 win32k!HMUnlockObject:
